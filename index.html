@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>computer_graphics</title>
+  </head>
+
+  <body onload="main()">
+    <div style="width: 1300px;">
+        <div style="float: left; width: 200px;">
+            <canvas id="webgl" width="912" height="684"></canvas>
+        </div>
+
+        <div style="float: left; width: 100px;background-color: hsla(89, 43%, 51%, 0.3);"></div>
+        <div style="float: right; width: 300px;background-color: hsla(89, 43%, 51%, 0.3);
+        padding-left: 25px;padding-right: 15px;padding-bottom: 20px;font-size: 20px;height: 668px;">
+            <h1><u>Controls</u></h1>
+            <li>Arrow (↑) ---- Move Forward </li><br />
+            <li>Arrow (↓) -- Move Backward </li><br />
+            <li>Arrow (←) -- Rotate Left</li><br />
+            <li>Arrow (→) - Rotate Right</li><br />
+            <li><u>W</u> key -- Tilt Up</li><br />
+            <li><u>S</u>  key -- Tilt Down</li><br />
+            <br /><br />
+            <li><u>T</u>  key -- TV light on/off</li><br />
+            <li><u>O</u>  key -- Open/Close Shelf door</li><br />
+            <li><u>1</u>  key -- Move chairs away</li><br />
+            <li><u>2</u>  key -- Move chairs back</li><br />
+        </div>
+    </div>
+    <img id="leather-image" src="images/leather.jpg" width="0" height="0"></img>
+    <img id="floor-image" src="images/laminate.jpg" width="0" height="0"></img>
+    <img id="wall-image" src="images/wallpaper.jpg" width="0" height="0"></img>
+    <img id="wood" src="images/wood.jpg" width="0" height="0"></img>
+    <img id="red-mat" src="images/red-mat.jpg" width="0" height="0"></img>
+
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
